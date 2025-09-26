@@ -7,8 +7,10 @@
   </head>
   <body>
     <textarea id="textinho"></textarea>
-    <script>
+    <script type="module">
+      import { Stack } from "./stack/stack.js";
       const textinho = document.getElementById("textinho");
+      const undoStack = new Stack();
 
       function undo() {
         console.log("undo");
