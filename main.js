@@ -5,5 +5,5 @@ stack.push("A");
 stack.push("B");
 stack.push("C");
 const c = stack.pop();
-console.log(c);
+console.log("removido", c);
 stack.print();
