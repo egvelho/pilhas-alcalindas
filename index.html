@@ -8,6 +8,11 @@
   <body>
     <textarea id="textinho"></textarea>
     <script type="module">
+      /*
+        Assumindo que textinho.value guarda o texto que o usuário
+        está digitando no textarea, utilize uma pilha para
+        implementar ctrl+z (desfazer) e ctrl+y (refazer)
+      */
       import { Stack } from "./stack/stack.js";
       const textinho = document.getElementById("textinho");
       const undoStack = new Stack();
